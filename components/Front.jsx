@@ -32,7 +32,7 @@ export default function Front({ theme, component1Ref }) {
                                 <a target='_blank' href="https://in.linkedin.com/in/rishav-sanjan-09259a273"><img className="w-8" src="linkedin-logo.png"></img></a>
                             </div>
                             <div>
-                                <a target='_blank' href='https://drive.google.com/file/d/171z3Jl82YkjM-VtOjn1xoXRDJfQ-jkpU/view?usp=sharing' ><button  className="bg-amber-300 pl-20 pr-20 pt-5 pb-5 rounded-lg hover:bg-green-500">Resume</button> </a> 
+                                <a target='_blank' href='https://drive.google.com/file/d/1HamzlPgk3v7volCTf9kcNvLx4n4C1dUo/view' ><button  className="bg-amber-300 pl-20 pr-20 pt-5 pb-5 rounded-lg hover:bg-green-500">Resume</button> </a> 
                             </div>
                         </div>
                         <div className="hidden md:flex items-center">
