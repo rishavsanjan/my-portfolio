@@ -29,6 +29,12 @@ export default function Services({ theme, component3Ref }) {
             title: "Backend Development",
             description: "I specialize in building efficient, scalable, and secure backend systems. My backend work primarily involves creating RESTful APIs, managing databases, implementing authentication and authorization, and optimizing server-side logic. I work with Node.js, Express, Prisma, PostgreSQL, MongoDB, and deploy using Cloudflare Workers, Vercel, and Render.",
             gradient: "from-emerald-500 to-teal-500"
+        },
+        {
+            image: "dev-ops-logo.png",
+            title: "DevOps & Cloud Engineering",
+            description: "I work on automating application deployment and managing cloud infrastructure using modern DevOps practices. My experience includes building CI/CD pipelines with Jenkins, containerizing applications with Docker and Docker Compose, orchestrating workloads with Kubernetes, and provisioning AWS infrastructure using Terraform. I use Ansible for configuration management and deployment automation, AWS services like EC2, ECR, S3, and SNS for cloud operations, and Prometheus and Grafana for monitoring and observability. I'm continuously learning to improve infrastructure automation, scalability, reliability, and deployment workflows.",
+            gradient: "from-green-500 to-blue-500"
         }
     ];
 

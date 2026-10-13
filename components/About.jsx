@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-export default function About({theme, component2Ref}) {
+export default function About({ theme, component2Ref }) {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -24,12 +24,22 @@ export default function About({theme, component2Ref}) {
         { name: 'C Language', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg', bg: '#A8B9CC' },
         { name: 'Postman', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg', bg: '#FF6C37' },
         { name: 'Hono', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg', bg: '#E36002' },
+        { name: 'Kubernetes', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg', bg: '#326CE5' },
+        { name: 'Docker', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', bg: '#2496ED' },
+        { name: 'Jenkins', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg', bg: '#D24939' },
+        { name: 'Terraform', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg', bg: '#7B42BC' },
+        { name: 'AWS', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', bg: '#232F3E' },
+        { name: 'Python', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', bg: '#3776AB' },
+        { name: 'Ansible', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ansible/ansible-original.svg', bg: '#EE0000' },
+        { name: 'Go', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg', bg: '#00ADD8' },
+        { name: 'PostgreSQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg', bg: '#4169E1' },
+        { name: 'SQL', url: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqldeveloper/sqldeveloper-original.svg', bg: '#CC2927' },
     ];
 
     return (
         <div ref={component2Ref} className={`min-h-screen ${theme === 'light' ? 'bg-gray-50' : 'bg-gray-900'} transition-colors duration-300`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                
+
 
                 {/* Header */}
                 <div className={`text-center mb-16 transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
@@ -79,8 +89,8 @@ export default function About({theme, component2Ref}) {
                                         }}
                                     >
                                         <div className="w-12 h-12 flex items-center justify-center relative">
-                                            <img 
-                                                src={tech.url} 
+                                            <img
+                                                src={tech.url}
                                                 alt={tech.name}
                                                 className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-110"
                                                 onError={(e) => {
@@ -88,7 +98,7 @@ export default function About({theme, component2Ref}) {
                                                     e.target.nextSibling.style.display = 'flex';
                                                 }}
                                             />
-                                            <div 
+                                            <div
                                                 className="w-12 h-12 rounded-lg hidden items-center justify-center text-white font-bold text-xl"
                                                 style={{ backgroundColor: tech.bg }}
                                             >
@@ -108,7 +118,7 @@ export default function About({theme, component2Ref}) {
                     <div className={`transition-all duration-700 delay-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                             <div className={`${theme === 'light' ? 'bg-white shadow-lg' : 'bg-gray-800'} rounded-2xl p-6 text-center`}>
-                                <div className="text-4xl font-bold text-blue-500 mb-2">16+</div>
+                                <div className="text-4xl font-bold text-blue-500 mb-2">{technologies.length - 1}+</div>
                                 <div className={`${theme === 'light' ? 'text-gray-600' : 'text-gray-400'} font-medium`}>Technologies</div>
                             </div>
                             <div className={`${theme === 'light' ? 'bg-white shadow-lg' : 'bg-gray-800'} rounded-2xl p-6 text-center`}>
